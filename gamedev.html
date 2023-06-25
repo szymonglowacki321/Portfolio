@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>SZYMON GŁOWACKI</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<style>
+  
+    body::-webkit-scrollbar{
+    display: none;
+  }
+  
+  </style>
+
+<body>
+
+    <ul>
+        
+        <h1></h1>
+        
+    </ul>
+
+
+    <div class="links">
+
+        <div class="codegithub">
+            
+         <h4>GAMEDEV   <img src="./pngs/gamelogos.png" height="90" title="logo"></h4>
+         
+         
+         <h5>
+
+          Jako doświadczony twórca gier, posiadam umiejętności w zakresie silnika Unity i stworzyłem liczne modele 3D, elementy gry oraz animacje, które zachwyciły publiczność na całym świecie. Cenię sobie pisanie czystego i wydajnego kodu, który zapewnia płynne doświadczenie dla graczy. Zawsze uczę się i eksploruję nowe techniki i technologie, aby doskonalić swoje umiejętności i być na czele branży. Jako twórca gier pasjonuję się tworzeniem gier, które dostarczają emocjonujących i niezapomnianych doświadczeń dla graczy. Stworzyłem gry na PC oraz strony internetowe. Mam również doświadczenie w tworzeniu animacji do moich gier, które mogą być wykorzystane w celach marketingowych i generowania zainteresowania nadchodzącymi premierami. Wierzę, że dbałość o szczegóły jest kluczem do tworzenia udanych gier i pracuję, aby upewnić się, że każdy aspekt moich gier, od oprawy graficznej do rozgrywki, jest dopracowany i angażujący. Ogólnie rzecz biorąc, jestem pasjonującym i oddanym twórcą gier, który kocha dreszczyk emocji związany z tworzeniem wciągających i ekscytujących doświadczeń w grach. Jeśli szukasz utalentowanego i zdolnego dewelopera, który może ożywić Twoją wizję i stworzyć gry, które zachwycą graczy, nie szukaj dalej. Jestem podekscytowany możliwością wniesienia moich umiejętności i wiedzy do Twojego kolejnego projektu.
+           <br>
+           <br>
+          As an experienced game developer, I am highly skilled in the Unity game engine and have created numerous 3D models, game assets, and animations that have captivated audiences around the world. I pride myself on writing clean, efficient code that delivers a seamless gaming experience for players. I am always learning and exploring new techniques and technologies to improve my skills and stay at the forefront of the industry. As a game developer, I am passionate about creating games that deliver exciting and memorable experiences for players. I have developed games for PS and websites. I also have experience creating animations for my games, which can be used for marketing purposes and to generate interest in upcoming releases. I believe that attention to detail is key to creating successful games, and I work tirelessly to ensure that every aspect of my games, from the cover to the gameplay, is polished and engaging. Overall, I am a passionate and dedicated game developer who loves the thrill of creating immersive and exciting gaming experiences.
+          
+          </h5>
+         </div>
+    
+
+        <div class="TEL">
+            <h2><ion-icon name="call-outline"></ion-icon>733743446</h2>
+           
+            <h2><ion-icon name="mail-outline"></ion-icon>szymonglowacki321@gmail.com</h2>
+
+            
+
+            
+        </div>
+
+
+    </div>
+      
+
+    <div class="div" data-aos="fade-in" data-aos-duration="9000">
+       <h7><img src="nfs okladka strona.png" height="500"></h7>
+     </div>
+
+     <h6><video autoplay loop src="ani.mp4"></h6>
+     
+
+  <div class="stars">
+   <div id="particles-js"></div>
+   <script type="text/javascript" src="particles.js"></script>
+   <script type="text/javascript" src="app2.js"></script>
+  </div>
+
+
+    
+    <div class="scene"></div>
+
+    <script src="./three.min.js"></script>
+    
+    <script src="./app.js"></script>
+    <script src="./threex.domevents.js"></script>
+    <script src="./OrbitControls.js"></script>
+ 
+ 
+    <a class="socials" href="https://www.linkedin.com/in/szymon-g%C5%82owacki-673424255/" target="_blank">
+        
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+
+    <a class="socials2" href="https://github.com/szymonglowacki321" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+
+
+    <a class="cv" href="cv.pdf" download>  
+               
+
+      <ion-icon name="download-outline">cv</ion-icon>
+
+  </a>
+
+
+    <a href="index.html">
+    <button id="cameraButton">Back</button>
+    </a>
+    <style>
+        #cameraButton {
+          background-color: rgba(255, 255, 255, 0);
+          color: rgb(255, 255, 255);
+          border: none;
+          width: 150px;
+          height: 50px;
+          text-align: center;
+          font-size: 18px;
+          position: fixed;
+          top: 95%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 3;
+          
+        }
+      
+        #cameraButton:hover {
+          color: #26ff26;
+          cursor: pointer;
+        }
+      </style>
+
+
+    <script>
+      let clicks = 0;
+      const initialCameraPosition = {...camera.position};
+    
+      document.getElementById("cameraButton").addEventListener("click", function onMouseClick(event) {
+        if (clicks < 3) {
+          camera.position.x -= 300;
+          clicks++;
+        } else {
+          camera.position.x = initialCameraPosition.x;
+          clicks = 0;
+        }
+      });
+    </script>
+    
+    
+   
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+
+</body>
+</html>

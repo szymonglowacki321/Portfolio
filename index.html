@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>SZYMON GŁOWACKI</title>
+</head>
+<body>
+  
+
+    <ul>
+        <div class="ul" data-aos="fade-right" data-aos-duration="9000" data-aos-delay="700">
+         <img src="SZYMONLOGO.png" height="300">  
+        </div>
+        
+        
+
+    </ul>
+
+    
+
+
+    <div class="links">
+
+        <div class="INSTAGRAM" data-aos="zoom-in" data-aos-duration="9000">
+            
+            <a href="codegithub.html">
+        <button id="cameraButton2" class="neon-button">CODE</button>
+             </a>
+        
+     </div>
+    
+
+        <div class="GAME" data-aos="zoom-in" data-aos-duration="9000">
+
+            <a href="gamedev.html">
+            <button id="cameraButton3" class="neon-button">GAME DEV</button>
+            </a>
+
+        
+        
+        </div>
+
+
+        <div class="NFT" data-aos="zoom-in" data-aos-duration="9000">
+
+            <a href="nftcrypto.html">
+            <button id="cameraButton4" class="neon-button">3D MODELS</button>
+            </a>
+
+        
+        </div>
+
+        <div class="D" data-aos="zoom-in" data-aos-duration="9000">
+
+            <a href="3dmodels.html">
+            <button id="cameraButton5" class="neon-button">PHOTOSHOP</button>
+            </a>
+
+        
+        </div>
+
+         
+        <div class="axis">
+            
+          <img src="./pngs/yzx.png" height="65" title="logo">
+
+        </div>
+
+
+
+        <div class="TEL">
+            
+        
+
+            <h2><ion-icon name="call-outline"></ion-icon>733743446</h2>
+           
+            <h2><ion-icon name="mail-outline"></ion-icon>szymonglowacki321@gmail.com</h2>
+
+
+    </div>
+
+    
+      
+      
+      
+
+  <div class="stars">
+   <div id="particles-js"></div>
+   <script type="text/javascript" src="particles.js"></script>
+   <script type="text/javascript" src="app2.js"></script>
+  </div>
+
+  
+    
+    <div class="scene"></div>
+
+    <script src="./three.min.js"></script>
+    <script src="./GLTFLoader.js"></script>
+    <script src="./app.js"></script>
+    <script src="./threex.domevents.js"></script>
+    <script src="./OrbitControls.js"></script>
+ 
+ 
+    <a class="socials" href="https://www.linkedin.com/in/szymon-g%C5%82owacki-673424255/" target="_blank">
+        
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+
+    <a class="socials2"   href="https://github.com/szymonglowacki321" target="_blank" >
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+
+    
+
+        <a class="cv" href="cv.pdf" download>  
+               
+
+            <ion-icon name="download-outline">cv</ion-icon>
+
+        </a>
+
+        
+    
+   
+         
+        
+
+    
+
+
+    <button id="cameraButton" >View 3D Object</button>
+
+    <style>
+        #cameraButton {
+          background-color: rgba(255, 255, 255, 0);
+          color: rgb(255, 255, 255);
+          border: none;
+          
+          height: 50px;
+          text-align: center;
+          font-size: 25px;
+          position: absolute;
+          top: 95%;
+          left: 65%;
+          transform: translate(-50%, -50%);
+          z-index: 3;
+          
+        }
+      
+        #cameraButton:hover {
+            color: #26ff26;
+          cursor: pointer;
+        }
+      </style>
+
+
+    <script>
+      let clicks = 0;
+      const initialCameraPosition = {...camera.position};
+    
+      document.getElementById("cameraButton").addEventListener("click", function onMouseClick(event) {
+        if (clicks < 3) {
+          camera.position.x -= 300;
+          clicks++;
+        } else {
+          camera.position.x = initialCameraPosition.x;
+          clicks = 0;
+        }
+      });
+    </script>
+
+
+
+
+
+
+
+<div id="button-container">
+<button id="color-button" >Change Color</button>
+</div>
+
+    <style>
+        #color-button {
+          background-color: rgba(255, 255, 255, 0);
+          color: rgb(255, 255, 255);
+          border: none;
+          
+          height: 50px;
+          text-align: center;
+          font-size: 25px;
+          position: absolute;
+          top: 95%;
+          left: 35%;
+          transform: translate(-50%, -50%);
+          z-index: 3;
+          
+        }
+      
+        #color-button:hover {
+            color: #26ff26;
+          cursor: pointer;
+        }
+      </style>
+
+
+
+
+    <script>
+
+     var button = document.getElementById("color-button");
+      var click = 0;
+
+     button.addEventListener("click", function() {
+        clicks++;
+        if (clicks % 4 === 1) {
+          document.body.style.background = "linear-gradient(to right top, #f81313, rgb(99,99,99))";
+        } else if (clicks % 4 === 2) {
+          document.body.style.background = "linear-gradient(to right top, #056b3e , rgb(99,99,99))";
+
+        } else if (clicks % 4 === 3) {
+          document.body.style.background = "linear-gradient(to right top, black , rgb(99,99,99))";
+
+        } else {
+          document.body.style.background = "linear-gradient(to right top, rgb(67, 67, 67), rgb(99,99,99))";
+        }
+    });
+
+     
+    </script>
+    
+    
+   
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+
+</body>
+</html>

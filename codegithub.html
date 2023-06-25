@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <title>SZYMON GŁOWACKI</title>
+</head>
+<body>
+
+   <h9>
+    Snippet of my code:
+  <pre>
+    
+    <code class="language=javescript">
+      scene = new THREE.Scene();
+
+const fov = 35;
+const aspect = container.clientWidth / container.clientHeight;
+const near = 0.1;
+const far = 500;
+
+camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+camera.position.set(0, 3, 30);
+
+const ambient = new THREE.AmbientLight(0x404040, 4);
+scene.add(ambient);
+
+const light = new THREE.DirectionalLight(0xffffff,4);
+light.position.set(10,10,10);
+scene.add(light);
+
+renderer = new THREE.WebGLRenderer ({antialias: true, alpha: true});
+renderer.setSize(container.clientWidth, container.clientHeight);
+renderer.setPixelRatio(window.devicePixelRatio);
+
+container.appendChild(renderer.domElement);
+    </code>
+  </pre>
+</h9>
+
+
+
+    <ul>
+        
+        <h1></h1>
+        
+    </ul>
+
+
+    <div class="links">
+
+        <div class="codegithub">
+            
+         <h4>CODE <img src="./pngs/codelogos.png" height="100" title="logo"></h4>
+          
+
+         <h5>
+          Doświadczony deweloper front-end, który skupia się na tworzeniu eleganckiego i wydajnego kodu. Posiadam umiejętności w zakresie Java, HTML, CSS i C#. Projektowałem strony internetowe oraz gry wideo. Oprócz moich umiejętności technicznych, posiadam również silne podstawy w projektowaniu UX i UI, co pozwala mi tworzyć projekty, które są zarówno wizualnie atrakcyjne, jak i przyjazne dla użytkownika. Moja zdolność do kreatywnego myślenia i szybkiego dostosowywania się do zmieniających się wymagań czyni mnie idealnym kandydatem do dowolnego projektu związanego z tworzeniem stron internetowych. Ogólnie rzecz biorąc, jestem zmotywowanym i pasjonującym deweloperem webowym, który dumnie dostarcza wyjątkowe rezultaty, przekraczając oczekiwania. Z niecierpliwością czekam na możliwość wniesienia moich umiejętności i wiedzy do Państwa kolejnego projektu.
+          
+          <br> 
+          <br>
+
+          Passionate Front End Developer who focuses on writing clean, elegant and efficient code. Skilled in Java, HTML, CSS, C#. Creates seamless UX and UI with creative but functional designs. Designed websites and video games. Beyond my technical skills, I also have a strong background in UX and UI design, which allows me to create designs that are both visually appealing and user-friendly. My ability to think creatively and adapt quickly to changing requirements makes me an ideal candidate for any web development project. Overall, I am a driven and passionate web developer who prides myself on delivering outstanding results that exceed expectations. I look forward to the opportunity to bring my skills and expertise to your next project.
+          
+            </h5>
+         </div>
+          
+
+         
+
+
+
+        <div class="TEL">
+            <h2><ion-icon name="call-outline"></ion-icon>733743446</h2>
+           
+            <h2><ion-icon name="mail-outline"></ion-icon>szymonglowacki321@gmail.com</h2>
+         
+
+        </div>
+
+
+    </div>
+
+
+
+
+  <div class="stars">
+   <div id="particles-js"></div>
+   <script type="text/javascript" src="particles.js"></script>
+   <script type="text/javascript" src="app2.js"></script>
+  </div>
+
+
+    
+    <div class="scene"></div>
+
+    <script src="./three.min.js"></script>
+    
+    <script src="./app.js"></script>
+    <script src="./threex.domevents.js"></script>
+    <script src="./OrbitControls.js"></script>
+ 
+ 
+    <a class="socials" href="https://www.linkedin.com/in/szymon-g%C5%82owacki-673424255/" target="_blank">
+        
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+
+    <a class="socials2" href="https://github.com/szymonglowacki321" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+
+
+    <a class="cv" href="cv.pdf" download>  
+               
+
+      <ion-icon name="download-outline">cv</ion-icon>
+
+  </a>
+
+
+
+    <a href="index.html">
+    <button id="cameraButton">Back</button>
+    </a>
+    <style>
+        #cameraButton {
+          background-color: rgba(255, 255, 255, 0);
+          color: rgb(255, 255, 255);
+          border: none;
+          width: 150px;
+          height: 50px;
+          text-align: center;
+          font-size: 18px;
+          position: absolute;
+          top: 95%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 3;
+          
+        }
+      
+        #cameraButton:hover {
+          color: #26ff26;
+          cursor: pointer;
+        }
+      </style>
+
+
+    <script>
+      let clicks = 0;
+      const initialCameraPosition = {...camera.position};
+    
+      document.getElementById("cameraButton").addEventListener("click", function onMouseClick(event) {
+        if (clicks < 3) {
+          camera.position.x -= 300;
+          clicks++;
+        } else {
+          camera.position.x = initialCameraPosition.x;
+          clicks = 0;
+        }
+      });
+    </script>
+    
+    
+   
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
