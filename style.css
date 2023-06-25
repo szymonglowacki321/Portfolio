@@ -288,10 +288,7 @@
     overflow: hidden;
     min-height: 100vh;
     background: rgb(61, 61, 61);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    
     
     
   }
